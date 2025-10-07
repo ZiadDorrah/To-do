@@ -1,0 +1,90 @@
+.editTaskSection .editTaskBtn{
+    background-color: #cedada;
+    color: #8c00ff;
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+.editTaskSection .editTaskBtn:hover{
+    color: #8c00ff;
+    background-color: #cedadaea;
+    transform: scale(1.05,1.05);
+    transition: all 0.2s ease;
+}
+
+/* Dark overlay */
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* dim background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal box */
+.modalContent {
+  background: #cedada;
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Header + footer */
+.modalHeader,
+.modalFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modalTitle {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.editTaskSection .saveTaskBtn{
+    background-color: transparent;
+    color: #8c00ff;
+    font-size: 1.3rem;
+    font-family: cursive;
+}
+
+.editTaskSection .saveTaskBtn:hover{
+    color: #8c00ff;
+}
+
+.editTaskSection .closeTaskBtn{
+    background-color: transparent;
+    color: #8c00ff;
+    font-size: 1.3rem;
+    font-family: cursive;
+    
+}
+
+.editTaskSection .closeTaskBtn:hover{
+    color: #8c00ff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,21 @@
+.infoSection {
+    color: #141414;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.infoSection .gradientText {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.infoSection .cards {
+    display: flex;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.infoSection .cards.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
