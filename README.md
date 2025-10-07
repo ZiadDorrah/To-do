@@ -47,14 +47,14 @@ src/
 │   ├── RootLayout.jsx
 │   ├── Home.jsx
 │   ├── CompletedTasks.jsx
+│   ├── TaskDetails.jsx
 │   └── NotFound.jsx
 │
 ├── store/
 │   └── store.js
 │
-├── index.js
-├── index.css
-└── App.css
+├── main.js
+└── index.css
 ```
 
 ---
